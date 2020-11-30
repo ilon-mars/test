@@ -1,0 +1,122 @@
+@font-face {
+  font-family: 'Gotham Pro Medium';
+  src: url('fonts/GothamPro-Medium.eot');
+  src: url('fonts/GothamPro-Medium.eot?#iefix') format('embedded-opentype'),
+  url('fonts/GothamPro-Medium.woff') format('woff'),
+  url('fonts/GothamPro-Medium.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Gotham Pro Regular';
+    src: url('fonts/GothamPro.eot');
+    src: url('fonts/GothamPro.eot?#iefix') format('embedded-opentype'),
+    url('fonts/GothamPro.woff') format('woff'),
+    url('fonts/GothamPro.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    }
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Gotham Pro Regular';
+}
+
+.circle-diagram{
+  margin-left: 10px;
+}
+
+.info-block{
+  font-family: 'Gotham Pro Regular';
+  display: flex;
+  margin-bottom: 15px;
+}
+
+.heading, .percent{
+  font-family: 'Arial';
+  font-weight: 700;
+  color: #555;
+}
+
+.heading{
+  margin-left: 10px;
+  min-width: 100px;
+}
+
+.heading, .numbers{
+  margin-right: 10px;
+}
+
+.quantity{
+  display: flex;
+  align-items: baseline;
+}
+
+.quantity-number{
+  color: #9d9d9d;
+}
+
+.icon{
+  width: 13px;
+  height: 13px;
+}
+
+.rectangle-diagram{
+  border: 1px solid #ececec;
+  border-radius: 4px;
+  background: #f9f9f9;
+  width: 100px;
+  overflow: hidden;
+}
+
+.percent-number{
+  display: block;
+  padding: 10px 0;
+  font-family: 'Arial';
+  margin-left: 45px;
+}
+
+.promoter-color-up{
+  background: #70a74b;
+  width: 30%;
+  height: 75%;
+  display: flex;
+}
+
+.promoter-color-down{
+  background: #b5d0a2;
+  width: 28%;
+  height: 25%;
+}
+
+.skeptic-color-up{
+  background: #fbd229;
+  width: 30%;
+  height: 75%;
+  display: flex;
+}
+
+.skeptic-color-down{
+  background: #fae691;
+  width: 28%;
+  height: 25%;
+}
+
+.critic-color-up{
+  background: #ed5243;
+  width: 28%;
+  height: 75%;
+  display: flex;
+}
+
+.critic-color-down{
+  background: #f3a69e;
+  width: 32%;
+  height: 25%;
+}

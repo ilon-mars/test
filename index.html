@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Тестовое задание</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="circle-diagram">
+      <svg class="circle-diagram" viewbox="0 0 400 400" width="250px" height="250px">
+        <g fill="#ccc" transform="translate(140 20)">
+          <path d="M23.7,13.7c-0.3,0.4-0.3,0.9,0,1.2c1.5,1.8,3,3.2,4.4,4.4
+          c1.3,1-0.4,1.8-0.7,1.9c-7.5,3.2-14.9-3.5-22.4-1.5V4c7.5-2,15,4.7,22.4,1.4c0.4-0.2,0.7-0.1,0.9,0.1c0.2,0.2,0.1,0.7-0.1,1.1
+          C26.7,9.3,25.2,11.6,23.7,13.7"/>
+          <path d="M2,0C0.9,0,0,0.9,0,2c0,0.3,0.1,0.5,0.2,0.8c0.2,0.4,0.5,1.2,0.5,2v28.9
+          c0,0.7,0.6,1.3,1.3,1.3c0.7,0,1.3-0.6,1.3-1.3V4.7c0-0.7,0.3-1.6,0.5-2C3.9,2.5,3.9,2.2,3.9,2C3.9,0.9,3,0,2,0"/>
+        </g>
+        <circle r="140" cx="150" cy="180" fill="none" stroke-width="8" stroke="#ccc" stroke-linecap="round"/>
+        <circle class="skeptic-circle" r="140" cx="150" cy="180" fill="none" stroke-width="8" stroke="#fbd229" stroke-linecap="round"/>
+        <circle class="promoter-circle" r="140" cx="150" cy="180" fill="none" stroke-width="8" stroke="#70a74b" stroke-linecap="round"/>
+        <text class="percent" x="150" y="110" font-family="Arial" font-size="34px" font-weight="bold" text-anchor="middle">72.7%</text>
+        <text class="loyal" x="150" y="140" font-family="Arial" font-size="28px" font-weight="bold" text-anchor="middle">Лояльность</text>
+        <text class="level" x="150" y="170" font-family="Arial" font-size="24px" text-anchor="middle" font-weight="bold" fill="#fbd229">ниже среднего</text>
+        <text x="150" y="190" font-family="Arial" font-size="16px" text-anchor="middle" fill="#ccc">по отрасли: FMCG</text>
+        <text x="150" y="210" font-family="Arial" font-size="16px" text-anchor="middle" fill="#ccc">значений слева от медианы</text>
+        <text x="150" y="230" font-family="Arial" font-size="16px" text-anchor="middle" fill="#ccc">52.0% - 83.1%</text>
+        <polygon points="110,270 120,260 130,270" fill="#70a74b" stroke-width="5"/>
+        <text x="150" y="270" font-family="Arial" font-size="16px" text-anchor="middle" fill="#70a74b">3.1</text>
+      </svg>
+    </div>
+    <div class="info-block promoter">
+      <div class="heading">Промоутеры</div>
+        <div class="numbers">
+          <div class="percent promoter-percent">32.0%</div>
+          <div class="quantity">
+            <span class="quantity-number">81</span>
+            <img src="icons/human_full.svg" alt="icon: human" class="icon">
+          </div>
+        </div>
+        <div class="rectangle-diagram">
+          <div class="promoter-color-up">
+            <span class="percent-number">+1.2%</span>
+          </div>
+          <div class="promoter-color-down"></div>
+        </div>
+    </div>
+    <div class="info-block skeptic">
+      <div class="heading">Скептики</div>
+        <div class="numbers">
+          <div class="percent skeptic-percent">39.1%</div>
+          <div class="quantity">
+            <span class="quantity-number mr-1">8</span>
+            <img src="icons/human_full.svg" alt="icon: human" class="icon">
+          </div>
+        </div>
+        <div class="rectangle-diagram">
+          <div class="skeptic-color-up">
+            <span class="percent-number">+4.8%</span>
+          </div>
+          <div class="skeptic-color-down"></div>
+        </div>
+    </div>
+    <div class="info-block critic">
+      <div class="heading">Критики</div>
+        <div class="numbers">
+        <div class="percent">79.8%</div>
+        <div class="quantity">
+          <span class="quantity-number">7</span>
+          <img src="icons/human_full.svg" alt="icon: human" class="icon">
+        </div>
+      </div>    
+      <div class="rectangle-diagram">
+        <div class="critic-color-up">
+          <span class="percent-number">-9.7%</span>
+        </div>
+        <div class="critic-color-down"></div>
+      </div>
+    </div>
+  </div>
+  <script src="diagram.js"></script>
+</body>
+</html>
